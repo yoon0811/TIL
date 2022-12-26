@@ -1,0 +1,23 @@
+Javascript working sample 
+
+//Find HTML Element 
+const boxEL = document.querySelector('.cssname');
+
+//Handle
+boxEl.addEventListener('click', function() {
+console.log('Click!'l);
+});
+
+//요소의 클래스 정보객체 활용
+boxEl.classList.add('active'); //<--boxEl('cssname')의 element에 active라는 css 를 추가 
+
+let isContains = boxEl,classList.contains('active') // <--isContains는 boxEl 의 classList에 active가 contains 되있는지 확인한다 
+
+console.log(isContains); //true
+
+
+boxEl.classList.remove('active'); //<--boxEl('cssname')의 element에 active라는 css 를 삭제
+
+let isContains = boxEl,classList.contains('active') // <--remove로 지워졌으니까
+console.log(isContains); //false
+

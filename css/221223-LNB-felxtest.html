@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="test.css">
+  <title>Document</title>
+</head>
+<body>
+<style>
+nav {
+  border: 1px solid red;
+  height: 100vh;
+  /* 뷰포트 하이트, 화면 사이즈 만큼 
+%는  부모요소 만큼임*/
+  width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+nav h1 {
+  border: 1px solid;
+  flex-shrink: 0;
+  /* 너네는 줄어들지마 */
+}
+
+nav ul {
+  border: 1px solid;
+  flex-grow: 1;
+  /* 아이템이 없는 경우가 있을 수 있으니 flex-grow가 필요하다. */
+  overflow: auto;
+}
+
+nav .foot {
+  flex-shrink: 0;
+  /* 너네는 줄어들지마 */
+  border: 1px solid;
+}
+
+
+</style>
+  
+  <nav>
+    <h1>노션 제목 부분</h1>
+    <ul>
+      <li>01</li>
+      <li>02</li>
+      <li>03</li>
+      <li>04</li>
+      <li>05</li>
+      <li>06</li>
+      <li>07</li>
+      <li>08</li>
+      <li>09</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+    </ul>
+    <div>
+      Hello world! 
+    </div>
+  </nav>
+
+</body>
+</html>
